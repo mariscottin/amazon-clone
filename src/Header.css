@@ -1,0 +1,237 @@
+.sidebar__open {
+  overflow: hidden;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin: auto;
+}
+
+.header__hamburgerLogoContainer {
+  display: flex;
+}
+
+.header__hamburger {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.header__hamburger:hover {
+  border-color: #fff;
+}
+
+.header__hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px auto;
+  background: #fff;
+}
+
+.header__logoContainer {
+  width: 145px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 12px;
+  padding-left: 6px;
+  border: 1px solid transparent;
+}
+
+.header__logo {
+  width: 90px;
+  object-fit: contain;
+}
+
+.header__search {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchDropdown {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 42.8px;
+  width: 50px;
+  background: rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.header__searchDropdown:hover {
+  background: lightgray;
+}
+
+.header__searchInput {
+  height: 42.8px;
+  padding: 10px;
+  padding-left: 60px;
+  border: none;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 33px !important;
+  background-color: #febd69;
+  border-radius: 0 5px 5px 0;
+  width: 36px !important;
+  cursor: pointer;
+}
+
+.header__searchIcon:hover {
+  background-color: #f3ad52;
+}
+
+.header__countryOption > span {
+  padding: 12px 12px 3px 3px;
+}
+
+.header__countryOption img {
+  width: 20px;
+  height: 15px;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  margin-right: 5px;
+  padding: 4px 9px;
+  border: 1px solid transparent;
+}
+
+.header__basketCount {
+  margin-bottom: -4px;
+  color: #ff9900;
+  align-self: flex-start;
+  margin-left: 7px;
+}
+
+.header__cartText {
+  font-weight: bolder;
+  margin-top: -10px !important;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__nav > a {
+  text-decoration: none;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: white;
+  padding: 9px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.header__option:hover,
+.header__optionBasket:hover,
+.header__logoContainer:hover {
+  border: 1px solid white;
+  border-radius: 1px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    position: relative;
+    height: 120px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .header__hamburgerLogoContainer {
+    margin-left: 20px;
+  }
+
+  .header__nav {
+    margin-right: 20px;
+  }
+
+  .header__hamburger {
+    margin-top: 4px;
+    border: none;
+  }
+
+  .header__logo {
+    width: 82px;
+  }
+
+  .header__logoContainer {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .header__search {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .header__countryOption {
+    display: none;
+  }
+
+  .header__returns {
+    display: none;
+  }
+
+  .header__cartText {
+    display: none;
+  }
+}
+
+@media (max-width: 511px) {
+  .header__hamburgerLogoContainer {
+    margin-left: 0px;
+  }
+
+  .header__nav {
+    margin-right: 0px;
+  }
+}

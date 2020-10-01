@@ -1,0 +1,102 @@
+.payment {
+  background-color: #fff;
+}
+
+.payment__container > h1 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  background-color: rgb(234, 237, 237);
+  border-bottom: 1px solid lightgray;
+}
+
+.payment__container > h1 > a {
+  text-decoration: none;
+}
+
+.payment__section {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.payment__title {
+  flex: 0.2;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
+}
+
+.payment__details > form {
+  max-width: 400px;
+}
+
+.payment__details > h3 {
+  padding-bottom: 20px;
+}
+
+.payment__details > form > div > button {
+  background: linear-gradient(to top, #f0c14b, #fbdd91);
+  border: 1px solid;
+  width: 100%;
+  padding: 4px 12px;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  font-weight: bolder;
+  color: #111;
+  cursor: pointer;
+}
+
+.payment__details > form > div > button:hover {
+  background: linear-gradient(to top, #dbaf3e, #fbdd91);
+}
+
+.disabled {
+  border: 1px solid #999999 !important;
+  background: #cccccc !important;
+  color: #666666 !important;
+  cursor: default !important;
+}
+
+.payment__priceContainer {
+  margin-top: 12px;
+}
+
+/* .StripeElement {
+  border: 1px solid lightgray;
+  padding: 6px;
+} */
+
+.__PrivateStripeElement-input {
+  border: 1px solid lightgray !important;
+}
+
+@media (max-width: 567px) {
+  .payment__section {
+    flex-direction: column;
+  }
+
+  .payment__title {
+    flex: 1 1;
+    width: 100%;
+  }
+
+  .payment__address,
+  .payment__items,
+  .payment__details {
+    flex: 1 1;
+    width: 100%;
+  }
+
+  .payment__details > form {
+    width: 100%;
+    max-width: none;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
